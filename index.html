@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Prince .L. Wireko " content="Assignment(Frontend)" />
+    <link rel="shortcut icon" href="/img/Favicon.jpg" type="image/x-icon" />
+    <title>CharmMarket Product List</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="cart.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <div class="inner-wrap">
+            <div class="logo">
+              <img
+                src="img/FoodMart1.png"
+                alt="Product logo"
+                width="100"
+                height="100"
+              />
+              <h1>Eat-N-Shop.</h1>
+            </div>
+            <ul class="list-inline">
+              <li>
+                <a href="#" class="search">
+                  <input
+                    type="text"
+                    id="search-bar"
+                    placeholder="Search products..."
+                    aria-label="Search products"
+                  />
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li><a href="#" class="account" aria-label="Login">Login</a></li>
+              <li>
+                <div class="cart" aria-label="Shopping cart">
+                  <i class="fa fa-shopping-cart" aria-hidden="true">Cart</i>
+                  <div class="cart-container">
+                    <div class="cart-title">Cart</div>
+                    <div class="cart-items empty">
+                      <p class="cart-empty">Your cart is empty</p>
+                    </div>
+                    <button class="checkout empty" aria-label="Checkout">
+                      Checkout
+                    </button>
+                  </div>
+                  <div class="cart-count"><span class="qty">0</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="filter-grid">
+          <div class="inner-wrap">
+            <div class="filter-cell">
+              <select
+                class="form-control"
+                id="category-filter"
+                aria-label="Filter by category"
+              >
+                <option value="*">Category</option>
+                <option value="fav">Favorites</option>
+                <option value="Ord">Ordinary</option>
+              </select>
+            </div>
+            <div class="head">
+              <h3>(DELICIOUS EATS WITH CONVENIENT SHOPPING!)</h3>
+            </div>
+            <div class="filter-cell">
+              <select
+                class="form-control"
+                id="product-type-filter"
+                aria-label="Filter by product type"
+              >
+                <option value="*">Product Type</option>
+                <option value="square">Perishable</option>
+                <option value="circular">Non-Perishable</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Courses -->
+        <section id="course">
+          <div class="course-box">
+            <div
+              class="courses"
+              tabindex="0"
+              role="button"
+              data-name="Waffle Recipe"
+              data-category="fav"
+              data-type="square"
+              aria-label="View details for Waffle Recipe"
+            >
+              <img src="img/Waffle-Recipe.webp" alt="Waffle Recipe" />
+              <div class="details">
+                <span>Waffle Recipe</span>
+                <h6>Nisl metus nam viverra ut bibendum.</h6>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>(239)</span>
+                  <div
+                    onclick="window.location.href='productdetails.html';"
+                    class="details"
+                  >
+                  Click HERE TO Shop
+                  </div>
+                </div>
+              </div>
+              <div class="cost">$19.99</div>
+            </div>
+            <!-- Repeat for other products -->
+            <div
+              class="courses"
+              tabindex="0"
+              role="button"
+              data-name="Creme-Brule"
+              data-category="fav"
+              data-type="circular"
+              aria-label="View details for Creme-Brule Recipe"
+            >
+              <img src="img/Creme-Brule.webp" alt="Creme-Brule" />
+              <div class="details">
+                <span>Creme-Brule</span>
+                <h6>N Porttitor curae plultricies nladur.</h6>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>(219)</span>
+                  <div
+                    onclick="window.location.href='productdetails2.html';"
+                    class="details"
+                  >
+                  Click HERE TO Shop
+                  </div>
+                </div>
+              </div>
+              <div class="cost">$12.99</div>
+            </div>
+            <div
+              class="courses"
+              tabindex="0"
+              role="button"
+              data-name="Chicken cuisine"
+              data-category="Ord"
+              data-type="square"
+              aria-label="View details for Chicken cuisine Recipe"
+            >
+              <img src="img/Chickencuisine.jpg" alt="Chicken" />
+              <div class="details">
+                <span>Spicy Chicken</span>
+                <h6>Nisl metus llus exSenectus ultricies.</h6>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>(139)</span>
+                  <div
+                    onclick="window.location.href='productdetails3.html';"
+                    class="details"
+                  >
+                  Click HERE TO Shop
+                  </div>
+                </div>
+              </div>
+              <div class="cost">$9.99</div>
+            </div>
+
+            <div
+              class="courses"
+              tabindex="0"
+              role="button"
+              data-name="Pie"
+              data-category="fav"
+              data-type="circular"
+              aria-label="View details for Pie Recipe"
+            >
+              <img src="img/Pie2.jpg" alt="Pie" />
+              <div class="details">
+                <span>Pumpkin Pie</span>
+                <h6>Nisl platea phasellus etus ultricies.</h6>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>(239)</span>
+                  <div
+                    onclick="window.location.href='productdetails4.html';"
+                    class="details"
+                  >
+                  Click HERE TO Shop
+                  </div>
+                </div>
+              </div>
+              <div class="cost">$4.99</div>
+            </div>
+
+            <div
+              class="courses"
+              tabindex="0"
+              role="button"
+              data-name="italian-pizza"
+              data-category="Ord"
+              data-type="circular"
+              aria-label="View details for italian-pizza Recipe"
+            >
+              <img src="img/italian-pizza.avif" alt="pizza" />
+              <div class="details">
+                <span>Italian Pizza</span>
+                <h6>.Lorem ipsum odor amet, consect.</h6>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span>(109)</span>
+                  <div
+                    onclick="window.location.href='productdetails5.html';"
+                    class="details"
+                  >
+                  Click HERE TO Shop
+                  </div>
+                </div>
+              </div>
+              <div class="cost">$10.99</div>
+            </div>
+
+            <div
+              class="courses"
+              tabindex="0"
+              role="button"
+              data-name="Sallads"
+              data-category="Ord"
+              data-type="square"
+              aria-label="View details for Sallads Recipe"
+            >
+              <img src="img/vege.jpg" alt="" />
+              <div class="details">
+                <span>Sallads</span>
+                <h6>Nisl metu ornare Senectus ultricies.</h6>
+                <div class="star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+                  <span>(239)</span>
+                  <div
+                    onclick="window.location.href='productdetails.html';"
+                    class="details"
+                  >
+                  Click HERE TO Shop
+                  </div>
+                </div>
+              </div>
+              <div class="cost">$4.99</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="credit">
+      Designed by Prince Larbi Wireko - Frontend Developer:
+      <a
+        title="Awesome Projects & scripts"
+        href="https://my-portfolio-five-liard-53.vercel.app/"
+        target="_blank"
+        >Portofolio</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

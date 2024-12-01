@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Assignment(Frontend)" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="/img/Favicon.jpg" type="image/x-icon" />
+    <title>CharmMarket Product List</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="cart.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <div class="inner-wrap">
+            <div class="logo">
+              <img
+                src="img/FoodMart1.png"
+                alt="Product logo"
+                width="100"
+                height="100"
+              />
+              <h1>Eat-N-Shop.</h1>
+            </div>
+            <ul class="list-inline">
+              <li>
+                <a href="#" class="search">
+                  <input
+                    type="text"
+                    id="search-bar"
+                    placeholder="italian-pizza Recipe..."
+                    aria-label="Search products"
+                  />
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li><a href="#" class="account" aria-label="Login">Login</a></li>
+              <li>
+                <div class="cart" aria-label="Shopping cart">
+                  <i class="fa fa-shopping-cart" aria-hidden="true">Cart</i>
+                  <div class="cart-container">
+                    <div class="cart-title">Cart</div>
+                    <div class="cart-items empty">
+                      <p class="cart-empty">Your cart is empty</p>
+                    </div>
+                    <div class="checkout empty" aria-label="Checkout"></div>
+                  </div>
+                  <div class="cart-count"><span class="qty">0</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <div class="filter-grid">
+          <div class="inner-wrap">
+            <div class="filter-cell">
+              <select
+                class="form-control"
+                id="category-filter"
+                aria-label="Filter by category"
+              >
+                <option value="Ord">Ordinary</option>
+              </select>
+            </div>
+            <div class="head">
+              <h3>(DELICIOUS EATS WITH CONVENIENT SHOPPING!)</h3>
+            </div>
+            <div class="filter-cell">
+              <select
+                class="form-control"
+                id="product-type-filter"
+                aria-label="Filter by product type"
+              >
+                <option value="circular">Non-Perishable</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home">
+        <a href="index.html">Back</a>
+      </div>
+
+      <!-- Details -->
+      <section class="main2">
+        <div class="default gallery">
+          <div class="main-img">
+            <img
+              class="active"
+              src="img/italian-pizza.avif"
+              alt="product-image"
+            />
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>Italian Pizza</h3>
+          <h2 class="product-name">Hot-Extra Spicy Italian Pizza</h2>
+          <p class="product-desc">
+            litora egestas tellus vulputate a dictumst. Porttitor curae vitae
+            ornare et, platea phasellus ex. Senectus ultricies litora egestas
+            tellus vulputate a dictumst. Nisl metus nam viverra ut bibendum.
+            Morbi phasellus urna curabitur magnis in potenti condimentum. litora
+            egestas tellus vulputate a dictumst. Porttitor curae vitae ornare
+            et, platea phasellus ex. Senectus ultricies litora egestas tellus
+            vulputate a dictumst.
+          </p>
+          <div class="price-info">
+            <div class="price">
+              <span class="current-price">$10.99</span>
+              <span class="discount">50%</span>
+            </div>
+            <div class="prev-price">$22.00</div>
+          </div>
+          <div class="add-to-cart-container">
+            <div class="counter">
+              <button class="minus">
+                <i class="fa fa-minus"></i>
+              </button>
+              <span class="count">0</span>
+              <button class="plus">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart">
+              <span>
+                <i class="fa fa-shopping-cart" ait="cart icon"></i>
+              </span>
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="credit">
+      Designed by Prince Larbi Wireko - Frontend Developer:
+      <a
+        title="Awesome Projects & scripts"
+        href="https://my-portfolio-five-liard-53.vercel.app/"
+        target="_blank"
+        >Portofolio</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
